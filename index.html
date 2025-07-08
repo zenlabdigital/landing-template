@@ -34,6 +34,12 @@
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+
+    <style>
+        /* Estilos para ocultar y mostrar el contenido según el idioma */
+        .lang-es { display: none; }
+        .lang-en { display: none; }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -56,30 +62,29 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="#header">
+                            <span class="lang-en">Home</span>
+                            <span class="lang-es">Inicio</span>
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#details">Motivations</a>
+                        <a class="nav-link page-scroll" href="#details">
+                            <span class="lang-en">Motivations</span>
+                            <span class="lang-es">Motivaciones</span>
+                        </a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#strengths">Strengths</a>
-                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
+                        <a class="nav-link page-scroll" href="#about">
+                            <span class="lang-en">About</span>
+                            <span class="lang-es">Acerca de</span>
+                        </a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Drop</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                        </div>
-                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                        <a class="nav-link page-scroll" href="#contact">
+                            <span class="lang-en">Contact</span>
+                            <span class="lang-es">Contacto</span>
+                        </a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
@@ -89,12 +94,6 @@
                             <i class="fab fa-github fa-stack-1x"></i>
                         </a>
                     </span>
-                    <!-- <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span> -->
                 </span>
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
@@ -114,24 +113,39 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h3 class="container-words">
-                            <span class="word w1">&#60;entrepreneurs&#62;</span>
-                            <span class="word w2">&#60;artists&#62;</span>
-                            <span class="word w3">&#60;developers&#62;</span>
-                            <span class="word w4">&#60;influencers&#62;</span>
-                            <span class="word w5">&#60;anyone&#62;</span>
+                            <span class="word w1 lang-en">&#60;entrepreneurs&#62;</span>
+                            <span class="word w2 lang-en">&#60;artists&#62;</span>
+                            <span class="word w3 lang-en">&#60;developers&#62;</span>
+                            <span class="word w4 lang-en">&#60;influencers&#62;</span>
+                            <span class="word w5 lang-en">&#60;anyone&#62;</span>
+                            <span class="word w1 lang-es" style="display: none;">&#60;emprendedores&#62;</span>
+                            <span class="word w2 lang-es" style="display: none;">&#60;artistas&#62;</span>
+                            <span class="word w3 lang-es" style="display: none;">&#60;desarrolladores&#62;</span>
+                            <span class="word w4 lang-es" style="display: none;">&#60;influencers&#62;</span>
+                            <span class="word w5 lang-es" style="display: none;">&#60;cualquiera&#62;</span>
                             <div>
                                 <br>
-                                &emsp;&emsp;coding Tools for 
+                                &emsp;&emsp;
+                                <span class="lang-en">coding Tools for</span>
+                                <span class="lang-es" style="display: none;">Herramientas de codificación para</span>
                             </div>
-                            
-                            <span class="word w1">&#60;/entrepreneurs&#62;</span>
-                            <span class="word w2"> &#60;/artists&#62;</span>
-                            <span class="word w3"> &#60;/developers&#62;</span>
-                            <span class="word w4"> &#60;/influencers&#62;</span>
-                            <span class="word w5"> &#60;/anyone&#62;</span>
+
+                            <span class="word w1 lang-en">&#60;/entrepreneurs&#62;</span>
+                            <span class="word w2 lang-en"> &#60;/artists&#62;</span>
+                            <span class="word w3 lang-en"> &#60;/developers&#62;</span>
+                            <span class="word w4 lang-en"> &#60;/influencers&#62;</span>
+                            <span class="word w5 lang-en"> &#60;/anyone&#62;</span>
+                            <span class="word w1 lang-es" style="display: none;">&#60;/emprendedores&#62;</span>
+                            <span class="word w2 lang-es" style="display: none;"> &#60;/artistas&#62;</span>
+                            <span class="word w3 lang-es" style="display: none;"> &#60;/desarrolladores&#62;</span>
+                            <span class="word w4 lang-es" style="display: none;"> &#60;/influencers&#62;</span>
+                            <span class="word w5 lang-es" style="display: none;"> &#60;/cualquiera&#62;</span>
                         </h3>
                         <br>
-                        <a class="btn-solid-lg page-scroll" href="#details">Discover</a>
+                        <a class="btn-solid-lg page-scroll" href="#details">
+                            <span class="lang-en">Discover</span>
+                            <span class="lang-es" style="display: none;">Descubrir</span>
+                        </a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -147,9 +161,16 @@
                                 <i class="fas fa-users"></i>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Building Community</h5>
-                                <div class="card-text">To build a solid base code and software for online projects with a 
-                                 bulletproof strategy</div>
+                                <h5 class="card-title">
+                                    <span class="lang-en">Building Community</span>
+                                    <span class="lang-es" style="display: none;">Construyendo Comunidad</span>
+                                </h5>
+                                <div class="card-text">
+                                    <span class="lang-en">To build a solid base code and software for online projects with a
+                                        bulletproof strategy</span>
+                                    <span class="lang-es" style="display: none;">Para construir una base de código y software sólida para proyectos en línea con una
+                                        estrategia a prueba de balas</span>
+                                </div>
                             </div>
                         </div>
                         <!-- end of card -->
@@ -160,9 +181,16 @@
                                 <i class="fas fa-pencil-ruler"></i>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Design & development</h5>
-                                <div class="card-text">Our community of international designers and developers are able to create
-                                    beautiful designs and structured code</div>
+                                <h5 class="card-title">
+                                    <span class="lang-en">Design & development</span>
+                                    <span class="lang-es" style="display: none;">Diseño y desarrollo</span>
+                                </h5>
+                                <div class="card-text">
+                                    <span class="lang-en">Our community of international designers and developers are able to create
+                                        beautiful designs and structured code</span>
+                                    <span class="lang-es" style="display: none;">Nuestra comunidad de diseñadores y desarrolladores internacionales es capaz de crear
+                                        hermosos diseños y código estructurado</span>
+                                </div>
                             </div>
                         </div>
                         <!-- end of card -->
@@ -173,8 +201,14 @@
                                 <i class="fas fa-microchip"></i>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Industry 4.0</h5>
-                                <div class="card-text">Creating software base for A/R, blockchain & Artificial Inteligence projects</div>
+                                <h5 class="card-title">
+                                    <span class="lang-en">Industry 4.0</span>
+                                    <span class="lang-es" style="display: none;">Industria 4.0</span>
+                                </h5>
+                                <div class="card-text">
+                                    <span class="lang-en">Creating software base for A/R, blockchain & Artificial Inteligence projects</span>
+                                    <span class="lang-es" style="display: none;">Creando una base de software para proyectos de R/A, blockchain e Inteligencia Artificial</span>
+                                </div>
                             </div>
                         </div>
                         <!-- end of card -->
@@ -193,26 +227,45 @@
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
-                        <h2>Building community</h2>
+                        <h2>
+                            <span class="lang-en">Building community</span>
+                            <span class="lang-es" style="display: none;">Construyendo comunidad</span>
+                        </h2>
                         <hr class="hr-heading">
-                        <p>To build a solid base code and software for online projects with a 
-                            bulletproof strategy. You can rely on our experience to create a beautiful and efficient online project</p>
+                        <p>
+                            <span class="lang-en">To build a solid base code and software for online projects with a
+                                bulletproof strategy. You can rely on our experience to create a beautiful and efficient online project</span>
+                            <span class="lang-es" style="display: none;">Para construir una base de código y software sólida para proyectos en línea con una
+                                estrategia a prueba de balas. Puedes confiar en nuestra experiencia para crear un proyecto en línea hermoso y eficiente</span>
+                        </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Delivering powerful technology for popular projects</div>
+                                <div class="media-body">
+                                    <span class="lang-en">Delivering powerful technology for popular projects</span>
+                                    <span class="lang-es" style="display: none;">Entregando tecnología potente para proyectos populares</span>
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Creating beautiful code.</div>
+                                <div class="media-body">
+                                    <span class="lang-en">Creating beautiful code.</span>
+                                    <span class="lang-es" style="display: none;">Creando código hermoso.</span>
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Preparing complete new generation technology software for industry 4.0</div>
+                                <div class="media-body">
+                                    <span class="lang-en">Preparing complete new generation technology software for industry 4.0</span>
+                                    <span class="lang-es" style="display: none;">Preparando software de tecnología de nueva generación completo para la industria 4.0</span>
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Speedy delivery of community services</div>
+                                <div class="media-body">
+                                    <span class="lang-en">Speedy delivery of community services</span>
+                                    <span class="lang-es" style="display: none;">Entrega rápida de servicios comunitarios</span>
+                                </div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -239,12 +292,23 @@
                 </div> <!-- end of image-area -->
                 <div class="text-area">
                     <div class="text-container">
-                        <h2>Design & development</h2>
+                        <h2>
+                            <span class="lang-en">Design & development</span>
+                            <span class="lang-es" style="display: none;">Diseño y desarrollo</span>
+                        </h2>
                         <hr class="hr-heading">
-                        <p>Our team of international designers and developers are able to create beautiful designs and
-                            structured code that will serve your project to establish your market position and
-                            increase revenues</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Lightbox</a>
+                        <p>
+                            <span class="lang-en">Our team of international designers and developers are able to create beautiful designs and
+                                structured code that will serve your project to establish your market position and
+                                increase revenues</span>
+                            <span class="lang-es" style="display: none;">Nuestro equipo de diseñadores y desarrolladores internacionales es capaz de crear hermosos diseños y
+                                código estructurado que servirá a su proyecto para establecer su posición en el mercado y
+                                aumentar los ingresos</span>
+                        </p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">
+                            <span class="lang-en">Lightbox</span>
+                            <span class="lang-es" style="display: none;">Caja de luz</span>
+                        </a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of text-area -->
             </div> <!-- end of row -->
@@ -264,30 +328,56 @@
                 </div> <!-- end of image-container -->
             </div> <!-- end of col -->
             <div class="col-lg-4">
-                <h3>Goals Setting</h3>
+                <h3>
+                    <span class="lang-en">Goals Setting</span>
+                    <span class="lang-es" style="display: none;">Establecimiento de metas</span>
+                </h3>
                 <hr>
-                <p>The community can easily help you grow up your personal development evolution joining to the zen lab community.</p>
-                <h4>User Feedback</h4>
-                <p>This is a great oportunity to make your live easier. And it will help improve
-                    your personal development.</p>
+                <p>
+                    <span class="lang-en">The community can easily help you grow up your personal development evolution joining to the zen lab community.</span>
+                    <span class="lang-es" style="display: none;">La comunidad puede ayudarte fácilmente a hacer crecer tu evolución de desarrollo personal uniéndote a la comunidad de Zen Lab.</span>
+                </p>
+                <h4>
+                    <span class="lang-en">User Feedback</span>
+                    <span class="lang-es" style="display: none;">Comentarios de los usuarios</span>
+                </h4>
+                <p>
+                    <span class="lang-en">This is a great oportunity to make your live easier. And it will help improve
+                        your personal development.</span>
+                    <span class="lang-es" style="display: none;">Esta es una gran oportunidad para facilitarte la vida. Y ayudará a mejorar
+                        tu desarrollo personal.</span>
+                </p>
                 <ul class="list-unstyled li-space-lg">
                     <li class="media">
                         <i class="fas fa-check"></i>
-                        <div class="media-body">Develop powerfull tools</div>
+                        <div class="media-body">
+                            <span class="lang-en">Develop powerfull tools</span>
+                            <span class="lang-es" style="display: none;">Desarrollar herramientas poderosas</span>
+                        </div>
                     </li>
                     <li class="media">
                         <i class="fas fa-check"></i>
-                        <div class="media-body">Get access to community support for your projects</div>
+                        <div class="media-body">
+                            <span class="lang-en">Get access to community support for your projects</span>
+                            <span class="lang-es" style="display: none;">Obtener acceso a soporte comunitario para tus proyectos</span>
+                        </div>
                     </li>
                     <li class="media">
                         <i class="fas fa-check"></i>
-                        <div class="media-body">Get access for all resources from the community</div>
+                        <div class="media-body">
+                            <span class="lang-en">Get access for all resources from the community</span>
+                            <span class="lang-es" style="display: none;">Obtener acceso a todos los recursos de la comunidad</span>
+                        </div>
                     </li>
-                    
-                    
                 </ul>
-                <a class="btn-solid-reg mfp-close page-scroll" href="#contact">Contact Us</a> <button
-                    class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+                <a class="btn-solid-reg mfp-close page-scroll" href="#contact">
+                    <span class="lang-en">Contact Us</span>
+                    <span class="lang-es" style="display: none;">Contáctanos</span>
+                </a>
+                <button class="btn-outline-reg mfp-close as-button" type="button">
+                    <span class="lang-en">Back</span>
+                    <span class="lang-es" style="display: none;">Volver</span>
+                </button>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
@@ -301,25 +391,43 @@
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
-                        <h2>Industry 4.0</h2>
+                        <h2>
+                            <span class="lang-en">Industry 4.0</span>
+                            <span class="lang-es" style="display: none;">Industria 4.0</span>
+                        </h2>
                         <hr class="hr-heading">
-                        <p>Creating software base for A/R, blockchain & Artificial Inteligence projects. </p>
+                        <p>
+                            <span class="lang-en">Creating software base for A/R, blockchain & Artificial Inteligence projects.</span>
+                            <span class="lang-es" style="display: none;">Creando una base de software para proyectos de R/A, blockchain e Inteligencia Artificial.</span>
+                        </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Creating developer's community</div>
+                                <div class="media-body">
+                                    <span class="lang-en">Creating developer's community</span>
+                                    <span class="lang-es" style="display: none;">Creando comunidad de desarrolladores</span>
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">GitHub public repositories</div>
+                                <div class="media-body">
+                                    <span class="lang-en">GitHub public repositories</span>
+                                    <span class="lang-es" style="display: none;">Repositorios públicos de GitHub</span>
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Web site deploying</div>
+                                <div class="media-body">
+                                    <span class="lang-en">Web site deploying</span>
+                                    <span class="lang-es" style="display: none;">Despliegue de sitios web</span>
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">First Github repository</div>
+                                <div class="media-body">
+                                    <span class="lang-en">First Github repository</span>
+                                    <span class="lang-es" style="display: none;">Primer repositorio de Github</span>
+                                </div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -335,30 +443,43 @@
     <!-- end of details 3 -->
 
 
-
-
-
     <!-- About -->
     <div id="about" class="basic-6">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container bg-gray">
-                        <h2>About our team</h2>
-                        <p>We are a group of designers, developers and marketers specialized in the new technologies .
-                            We've launched many projects in years</p>
+                        <h2>
+                            <span class="lang-en">About our team</span>
+                            <span class="lang-es" style="display: none;">Acerca de nuestro equipo</span>
+                        </h2>
+                        <p>
+                            <span class="lang-en">We are a group of designers, developers and marketers specialized in the new technologies.
+                                We've launched many projects in years</span>
+                            <span class="lang-es" style="display: none;">Somos un grupo de diseñadores, desarrolladores y especialistas en marketing especializados en las nuevas tecnologías.
+                                Hemos lanzado muchos proyectos en años</span>
+                        </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">We love what we do and have a lot of passion</div>
+                                <div class="media-body">
+                                    <span class="lang-en">We love what we do and have a lot of passion</span>
+                                    <span class="lang-es" style="display: none;">Amamos lo que hacemos y tenemos mucha pasión</span>
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">We are creating community</div>
+                                <div class="media-body">
+                                    <span class="lang-en">We are creating community</span>
+                                    <span class="lang-es" style="display: none;">Estamos creando comunidad</span>
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">We are empowering the people</div>
+                                <div class="media-body">
+                                    <span class="lang-en">We are empowering the people</span>
+                                    <span class="lang-es" style="display: none;">Estamos empoderando a la gente</span>
+                                </div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -377,8 +498,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4>We invite you to join us and experiment a new way to improve your personal projects and grow up</h4>
-                    <a class="btn-solid-lg page-scroll" href="#contact">Join Us</a>
+                    <h4>
+                        <span class="lang-en">We invite you to join us and experiment a new way to improve your personal projects and grow up</span>
+                        <span class="lang-es" style="display: none;">Te invitamos a unirte a nosotros y experimentar una nueva forma de mejorar tus proyectos personales y crecer</span>
+                    </h4>
+                    <a class="btn-solid-lg page-scroll" href="#contact">
+                        <span class="lang-en">Join Us</span>
+                        <span class="lang-es" style="display: none;">Únete a nosotros</span>
+                    </a>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -391,11 +518,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Join us</h2>
-                    <p class="p-heading">Write us and join to a new community of ¡new age entrepreneurs!</p>
+                    <h2>
+                        <span class="lang-en">Join us</span>
+                        <span class="lang-es" style="display: none;">Únete a nosotros</span>
+                    </h2>
+                    <p class="p-heading">
+                        <span class="lang-en">Write us and join to a new community of ¡new age entrepreneurs!</span>
+                        <span class="lang-es" style="display: none;">¡Escríbenos y únete a una nueva comunidad de emprendedores de la nueva era!</span>
+                    </p>
                     <ul class="list-unstyled li-space-lg">
                         <li><i class="fas fa-map-marker-alt"></i> &nbsp; Bogotá, DC 110111, CO</li>
-                         <!--<li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+81 720 2212</a></li> -->
                         <li><i class="fas fa-envelope"></i> &nbsp;<a
                                 href="mailto:info@zenlab.digital">info@zenlab.digital</a></li>
                     </ul>
@@ -403,23 +535,6 @@
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-
-                    <!-- Contact Form 
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                    </form>-->
-                    <!-- end of contact form -->
-
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -433,19 +548,36 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-col first">
-                        <h6>About Zen Lab Digital</h6>
-                        <p class="p-small">Zen Lab is a group of developers who loves to code an create innovative Tools
+                        <h6>
+                            <span class="lang-en">About Zen Lab Digital</span>
+                            <span class="lang-es" style="display: none;">Acerca de Zen Lab Digital</span>
+                        </h6>
+                        <p class="p-small">
+                            <span class="lang-en">Zen Lab is a group of developers who loves to code an create innovative Tools</span>
+                            <span class="lang-es" style="display: none;">Zen Lab es un grupo de desarrolladores a quienes les encanta codificar y crear herramientas innovadoras</span>
                         </p>
                     </div> <!-- end of footer-col -->
                     <div class="footer-col second">
-                        <h6>Links</h6>
+                        <h6>
+                            <span class="lang-en">Links</span>
+                            <span class="lang-es" style="display: none;">Enlaces</span>
+                        </h6>
                         <ul class="list-unstyled li-space-lg p-small">
-                            <!-- <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy
-                                    Policy</a></li> -->
-
-                            <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll"
-                                    href="#details">Motivations</a>, <a class="page-scroll" href="#about">About</a>,
-                                <a class="page-scroll" href="#contact">Contact</a>
+                            <li>Menu: <a class="page-scroll" href="#header">
+                                <span class="lang-en">Home</span>
+                                <span class="lang-es" style="display: none;">Inicio</span>
+                            </a>, <a class="page-scroll"
+                                    href="#details">
+                                    <span class="lang-en">Motivations</span>
+                                    <span class="lang-es" style="display: none;">Motivaciones</span>
+                                </a>, <a class="page-scroll" href="#about">
+                                    <span class="lang-en">About</span>
+                                    <span class="lang-es" style="display: none;">Acerca de</span>
+                                </a>,
+                                <a class="page-scroll" href="#contact">
+                                    <span class="lang-en">Contact</span>
+                                    <span class="lang-es" style="display: none;">Contacto</span>
+                                </a>
                             </li>
                         </ul>
                     </div> <!-- end of footer-col -->
@@ -456,26 +588,11 @@
                                 <i class="fab fa-github fa-stack-1x"></i>
                             </a>
                         </span>
-                        <!-- <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span> -->
-                        <!-- <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span> -->
-                        <!-- <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span> -->
-                        <p class="p-small">We would love to hear from you <a
-                                href="mailto:info@zenlab.digital"><strong>info@zenlab.digital</strong></a></p>
+                        <p class="p-small">
+                            <span class="lang-en">We would love to hear from you</span>
+                            <span class="lang-es" style="display: none;">Nos encantaría saber de ti</span>
+                            <a href="mailto:info@zenlab.digital"><strong>info@zenlab.digital</strong></a>
+                        </p>
                     </div> <!-- end of footer-col -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -506,6 +623,31 @@
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+    <script>
+        // Función para detectar el idioma del navegador y mostrar el contenido adecuado
+        function setLanguage() {
+            // Obtiene el idioma preferido del navegador
+            const userLang = navigator.language || navigator.userLanguage; // 'es-ES', 'en-US', etc.
+            // Extrae solo el código de idioma principal (ej. 'es', 'en')
+            const langCode = userLang.split('-')[0];
+
+            // Oculta todos los elementos de idioma inicialmente
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.lang-es').forEach(el => el.style.display = 'none');
+
+            // Muestra los elementos del idioma detectado
+            if (langCode === 'es') {
+                document.querySelectorAll('.lang-es').forEach(el => el.style.display = 'inline');
+            } else {
+                // Por defecto, si no es español o si es cualquier otro idioma, muestra inglés
+                document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'inline');
+            }
+        }
+
+        // Llama a la función cuando el DOM esté completamente cargado
+        document.addEventListener('DOMContentLoaded', setLanguage);
+    </script>
 </body>
 
 </html>
