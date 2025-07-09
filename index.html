@@ -39,6 +39,19 @@
         /* Estilos para ocultar y mostrar el contenido según el idioma */
         .lang-es { display: none; }
         .lang-en { display: none; }
+
+        /* Estilos para el botón de cambio de idioma en la navegación */
+        #language-toggle-button {
+            padding: 0.625rem 0.625rem; /* Ajusta el padding para que se vea como un nav-link */
+            color: #eeeeee;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        #language-toggle-button:hover {
+            color: #ff67b3;
+        }
     </style>
 </head>
 
@@ -86,6 +99,12 @@
                             <span class="lang-es">Contacto</span>
                         </a>
                     </li>
+                    <!-- Nuevo botón de cambio de idioma -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="language-toggle-button" href="#">
+                            <span class="current-lang-display">EN</span> <!-- Este texto cambiará dinámicamente -->
+                        </a>
+                    </li>
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
@@ -127,7 +146,7 @@
                                 <br>
                                 &emsp;&emsp;
                                 <span class="lang-en">coding Tools for</span>
-                                <span class="lang-es" style="display: none;">Herramientas de codificación para</span>
+                                <span class="lang-es" style="display: none;">Herramientas  para</span>
                             </div>
 
                             <span class="word w1 lang-en">&#60;/entrepreneurs&#62;</span>
@@ -146,6 +165,7 @@
                             <span class="lang-en">Discover</span>
                             <span class="lang-es" style="display: none;">Descubrir</span>
                         </a>
+                        <!-- Botón "Get Started!" / "¡Empezar!" eliminado de aquí -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -625,28 +645,50 @@
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 
     <script>
-        // Función para detectar el idioma del navegador y mostrar el contenido adecuado
-        function setLanguage() {
-            // Obtiene el idioma preferido del navegador
-            const userLang = navigator.language || navigator.userLanguage; // 'es-ES', 'en-US', etc.
-            // Extrae solo el código de idioma principal (ej. 'es', 'en')
-            const langCode = userLang.split('-')[0];
+        // Función para establecer el idioma de la página
+        function setLanguage(preferredLang) {
+            // Obtiene el idioma preferido del navegador o de localStorage
+            let currentLang = preferredLang || localStorage.getItem('zenlab_lang') || (navigator.language || navigator.userLanguage).split('-')[0];
+            // Asegura que el idioma sea 'es' o 'en'
+            currentLang = (currentLang === 'es') ? 'es' : 'en';
+
+            // Establece el atributo lang en la etiqueta <html>
+            document.documentElement.setAttribute('lang', currentLang);
+            // Guarda la preferencia de idioma en localStorage
+            localStorage.setItem('zenlab_lang', currentLang);
 
             // Oculta todos los elementos de idioma inicialmente
             document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
             document.querySelectorAll('.lang-es').forEach(el => el.style.display = 'none');
 
-            // Muestra los elementos del idioma detectado
-            if (langCode === 'es') {
+            const langToggleButtonText = document.getElementById('language-toggle-button').querySelector('.current-lang-display');
+
+            // Muestra los elementos del idioma detectado y actualiza el texto del botón
+            if (currentLang === 'es') {
                 document.querySelectorAll('.lang-es').forEach(el => el.style.display = 'inline');
+                langToggleButtonText.textContent = 'EN'; // Si la página está en español, el botón dirá "EN" para cambiar a inglés
             } else {
                 // Por defecto, si no es español o si es cualquier otro idioma, muestra inglés
                 document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'inline');
+                langToggleButtonText.textContent = 'ES'; // Si la página está en inglés, el botón dirá "ES" para cambiar a español
             }
         }
 
+        // Función para alternar el idioma
+        function toggleLanguage() {
+            const currentLang = document.documentElement.getAttribute('lang');
+            const newLang = (currentLang === 'es') ? 'en' : 'es';
+            setLanguage(newLang); // Llama a setLanguage con el nuevo idioma
+        }
+
         // Llama a la función cuando el DOM esté completamente cargado
-        document.addEventListener('DOMContentLoaded', setLanguage);
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage(); // Establece el idioma inicial al cargar la página
+            const langToggleButton = document.getElementById('language-toggle-button');
+            if (langToggleButton) {
+                langToggleButton.addEventListener('click', toggleLanguage); // Añade el evento click al botón
+            }
+        });
     </script>
 </body>
 
