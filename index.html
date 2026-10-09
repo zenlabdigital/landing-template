@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Free code for enteprenours">
-    <meta name="author" content="Zen Lab">
+    <meta name="description" content="Zenlab Digital — AI agents, RAG systems, custom software and cloud infrastructure for companies in LATAM and beyond. Ingeniería de IA y software a medida.">
+    <meta name="author" content="Zenlab Digital">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-    <meta property="og:site_name" content="Zen Lab" /> <!-- website name -->
+    <meta property="og:site_name" content="Zenlab Digital" /> <!-- website name -->
     <meta property="og:site" content="zenlab.digital" /> <!-- website link -->
-    <meta property="og:title" content="Zen Lab" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta property="og:title" content="Zenlab Digital — AI Agents & Software Engineering" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="AI agents, RAG systems, custom software and cloud infrastructure, delivered in verifiable milestones." /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="https://zenlab.digital/images/zen-lab-logo-white.png" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="https://zenlab.digital" /> <!-- where do you want your post to link to -->
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Zen Lab Digital</title>
+    <title>Zenlab Digital — AI Agents & Software Engineering</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,6 +52,45 @@
         #language-toggle-button:hover {
             color: #ff67b3;
         }
+
+        /* Ajuste para 4 cards de servicios (el template original traía 3) */
+        @media (min-width: 992px) {
+            .header .card,
+            .header .card:nth-of-type(3n+2) {
+                width: 250px;
+                margin-right: 0.75rem;
+                margin-left: 0.75rem;
+            }
+        }
+
+        /* Formulario de contacto */
+        .form-1 .contact-form {
+            max-width: 540px;
+            margin: 2rem auto 0;
+            text-align: left;
+        }
+
+        .form-1 .contact-form label {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .form-1 .contact-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        /* Utilidad de texto solo para lectores de pantalla */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
 </head>
 
@@ -63,12 +102,9 @@
 
             <!-- Image Logo -->
             <a class="navbar-brand logo-image" href="index.html"><img src="images/zen-lab-logo-simple.png"
-                    alt="alternative"></a>
+                    alt="Zenlab Digital logo"></a>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Spify</a> -->
-
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -82,15 +118,21 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#details">
-                            <span class="lang-en">Motivations</span>
-                            <span class="lang-es">Motivaciones</span>
+                        <a class="nav-link page-scroll" href="#services">
+                            <span class="lang-en">Services</span>
+                            <span class="lang-es">Servicios</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#process">
+                            <span class="lang-en">Process</span>
+                            <span class="lang-es">Proceso</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#about">
                             <span class="lang-en">About</span>
-                            <span class="lang-es">Acerca de</span>
+                            <span class="lang-es">Nosotros</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -99,16 +141,16 @@
                             <span class="lang-es">Contacto</span>
                         </a>
                     </li>
-                    <!-- Nuevo botón de cambio de idioma -->
+                    <!-- Botón de cambio de idioma -->
                     <li class="nav-item">
-                        <a class="nav-link" id="language-toggle-button" href="#">
-                            <span class="current-lang-display">EN</span> <!-- Este texto cambiará dinámicamente -->
+                        <a class="nav-link" id="language-toggle-button" href="#" role="button" aria-label="Switch language / Cambiar idioma">
+                            <span class="current-lang-display">EN</span>
                         </a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="https://github.com/zenlabdigital">
+                        <a href="https://github.com/zenlabdigital" aria-label="Zenlab Digital on GitHub">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-github fa-stack-1x"></i>
                         </a>
@@ -122,55 +164,59 @@
 
     <!-- Header -->
     <header id="header" class="header">
+        <h1 class="visually-hidden">Zenlab Digital — AI agents, custom software and cloud infrastructure / Agentes de IA, software a medida e infraestructura cloud</h1>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/zen-lab-logo-white.png" alt="alternative">
+                        <img class="img-fluid" src="images/zen-lab-logo-white.png" alt="Zenlab Digital">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h3 class="container-words">
-                            <span class="word w1 lang-en">&#60;entrepreneurs&#62;</span>
-                            <span class="word w2 lang-en">&#60;artists&#62;</span>
-                            <span class="word w3 lang-en">&#60;developers&#62;</span>
-                            <span class="word w4 lang-en">&#60;influencers&#62;</span>
-                            <span class="word w5 lang-en">&#60;anyone&#62;</span>
-                            <span class="word w1 lang-es" style="display: none;">&#60;emprendedores&#62;</span>
-                            <span class="word w2 lang-es" style="display: none;">&#60;artistas&#62;</span>
-                            <span class="word w3 lang-es" style="display: none;">&#60;desarrolladores&#62;</span>
-                            <span class="word w4 lang-es" style="display: none;">&#60;influencers&#62;</span>
-                            <span class="word w5 lang-es" style="display: none;">&#60;cualquiera&#62;</span>
+                            <span class="word w1 lang-en">&#60;clinics&#62;</span>
+                            <span class="word w2 lang-en">&#60;startups&#62;</span>
+                            <span class="word w3 lang-en">&#60;agencies&#62;</span>
+                            <span class="word w4 lang-en">&#60;government&#62;</span>
+                            <span class="word w5 lang-en">&#60;your-business&#62;</span>
+                            <span class="word w1 lang-es" style="display: none;">&#60;clínicas&#62;</span>
+                            <span class="word w2 lang-es" style="display: none;">&#60;startups&#62;</span>
+                            <span class="word w3 lang-es" style="display: none;">&#60;agencias&#62;</span>
+                            <span class="word w4 lang-es" style="display: none;">&#60;gobierno&#62;</span>
+                            <span class="word w5 lang-es" style="display: none;">&#60;tu-empresa&#62;</span>
                             <div>
                                 <br>
                                 &emsp;&emsp;
-                                <span class="lang-en">coding Tools for</span>
-                                <span class="lang-es" style="display: none;">Herramientas  para</span>
+                                <span class="lang-en">AI &amp; software engineering for</span>
+                                <span class="lang-es" style="display: none;">Ingeniería de IA y software para</span>
                             </div>
 
-                            <span class="word w1 lang-en">&#60;/entrepreneurs&#62;</span>
-                            <span class="word w2 lang-en"> &#60;/artists&#62;</span>
-                            <span class="word w3 lang-en"> &#60;/developers&#62;</span>
-                            <span class="word w4 lang-en"> &#60;/influencers&#62;</span>
-                            <span class="word w5 lang-en"> &#60;/anyone&#62;</span>
-                            <span class="word w1 lang-es" style="display: none;">&#60;/emprendedores&#62;</span>
-                            <span class="word w2 lang-es" style="display: none;"> &#60;/artistas&#62;</span>
-                            <span class="word w3 lang-es" style="display: none;"> &#60;/desarrolladores&#62;</span>
-                            <span class="word w4 lang-es" style="display: none;"> &#60;/influencers&#62;</span>
-                            <span class="word w5 lang-es" style="display: none;"> &#60;/cualquiera&#62;</span>
+                            <span class="word w1 lang-en">&#60;/clinics&#62;</span>
+                            <span class="word w2 lang-en"> &#60;/startups&#62;</span>
+                            <span class="word w3 lang-en"> &#60;/agencies&#62;</span>
+                            <span class="word w4 lang-en"> &#60;/government&#62;</span>
+                            <span class="word w5 lang-en"> &#60;/your-business&#62;</span>
+                            <span class="word w1 lang-es" style="display: none;">&#60;/clínicas&#62;</span>
+                            <span class="word w2 lang-es" style="display: none;"> &#60;/startups&#62;</span>
+                            <span class="word w3 lang-es" style="display: none;"> &#60;/agencias&#62;</span>
+                            <span class="word w4 lang-es" style="display: none;"> &#60;/gobierno&#62;</span>
+                            <span class="word w5 lang-es" style="display: none;"> &#60;/tu-empresa&#62;</span>
                         </h3>
                         <br>
-                        <a class="btn-solid-lg page-scroll" href="#details">
-                            <span class="lang-en">Discover</span>
-                            <span class="lang-es" style="display: none;">Descubrir</span>
+                        <a class="btn-solid-lg page-scroll" href="#contact">
+                            <span class="lang-en">Get a quote</span>
+                            <span class="lang-es" style="display: none;">Cotiza tu proyecto</span>
                         </a>
-                        <!-- Botón "Get Started!" / "¡Empezar!" eliminado de aquí -->
+                        <a class="btn-solid-lg page-scroll" href="#services">
+                            <span class="lang-en">Our services</span>
+                            <span class="lang-es" style="display: none;">Ver servicios</span>
+                        </a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-        <div class="services">
+        <div id="services" class="services">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -178,18 +224,16 @@
                         <!-- Card -->
                         <div class="card">
                             <div class="card-image">
-                                <i class="fas fa-users"></i>
+                                <i class="fas fa-robot" aria-hidden="true"></i>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <span class="lang-en">Building Community</span>
-                                    <span class="lang-es" style="display: none;">Construyendo Comunidad</span>
+                                    <span class="lang-en">AI Agents &amp; RAG</span>
+                                    <span class="lang-es" style="display: none;">Agentes de IA y RAG</span>
                                 </h5>
                                 <div class="card-text">
-                                    <span class="lang-en">To build a solid base code and software for online projects with a
-                                        bulletproof strategy</span>
-                                    <span class="lang-es" style="display: none;">Para construir una base de código y software sólida para proyectos en línea con una
-                                        estrategia a prueba de balas</span>
+                                    <span class="lang-en">LLM-powered agents, retrieval-augmented generation and AI integrations that automate real business processes</span>
+                                    <span class="lang-es" style="display: none;">Agentes con LLMs, generación aumentada por recuperación (RAG) e integraciones de IA que automatizan procesos reales de negocio</span>
                                 </div>
                             </div>
                         </div>
@@ -198,18 +242,16 @@
                         <!-- Card -->
                         <div class="card">
                             <div class="card-image">
-                                <i class="fas fa-pencil-ruler"></i>
+                                <i class="fas fa-code" aria-hidden="true"></i>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <span class="lang-en">Design & development</span>
-                                    <span class="lang-es" style="display: none;">Diseño y desarrollo</span>
+                                    <span class="lang-en">Custom Software</span>
+                                    <span class="lang-es" style="display: none;">Desarrollo a medida</span>
                                 </h5>
                                 <div class="card-text">
-                                    <span class="lang-en">Our community of international designers and developers are able to create
-                                        beautiful designs and structured code</span>
-                                    <span class="lang-es" style="display: none;">Nuestra comunidad de diseñadores y desarrolladores internacionales es capaz de crear
-                                        hermosos diseños y código estructurado</span>
+                                    <span class="lang-en">End-to-end web and mobile applications, specified first and delivered in verifiable milestones</span>
+                                    <span class="lang-es" style="display: none;">Aplicaciones web y móviles end-to-end, especificadas primero y entregadas por hitos verificables</span>
                                 </div>
                             </div>
                         </div>
@@ -218,16 +260,34 @@
                         <!-- Card -->
                         <div class="card">
                             <div class="card-image">
-                                <i class="fas fa-microchip"></i>
+                                <i class="fas fa-cloud" aria-hidden="true"></i>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <span class="lang-en">Industry 4.0</span>
-                                    <span class="lang-es" style="display: none;">Industria 4.0</span>
+                                    <span class="lang-en">Cloud &amp; DevOps</span>
+                                    <span class="lang-es" style="display: none;">Cloud y DevOps</span>
                                 </h5>
                                 <div class="card-text">
-                                    <span class="lang-en">Creating software base for A/R, blockchain & Artificial Inteligence projects</span>
-                                    <span class="lang-es" style="display: none;">Creando una base de software para proyectos de R/A, blockchain e Inteligencia Artificial</span>
+                                    <span class="lang-en">Multi-cloud infrastructure as code: Terraform, CI/CD and secure deployments that scale with you</span>
+                                    <span class="lang-es" style="display: none;">Infraestructura multi-cloud como código: Terraform, CI/CD y despliegues seguros que escalan contigo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="lang-en">Consulting &amp; Specs</span>
+                                    <span class="lang-es" style="display: none;">Consultoría y Specs</span>
+                                </h5>
+                                <div class="card-text">
+                                    <span class="lang-en">Technical discovery, specification and milestone-based budgets before writing a single line of code</span>
+                                    <span class="lang-es" style="display: none;">Discovery técnico, especificación y presupuestos por hitos antes de escribir una sola línea de código</span>
                                 </div>
                             </div>
                         </div>
@@ -241,50 +301,48 @@
     <!-- end of header -->
 
 
-    <!-- Details 1 -->
-    <div id="details" class="basic-1">
+    <!-- Details 1: Proceso -->
+    <div id="process" class="basic-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
                         <h2>
-                            <span class="lang-en">Building community</span>
-                            <span class="lang-es" style="display: none;">Construyendo comunidad</span>
+                            <span class="lang-en">How we work</span>
+                            <span class="lang-es" style="display: none;">Cómo trabajamos</span>
                         </h2>
                         <hr class="hr-heading">
                         <p>
-                            <span class="lang-en">To build a solid base code and software for online projects with a
-                                bulletproof strategy. You can rely on our experience to create a beautiful and efficient online project</span>
-                            <span class="lang-es" style="display: none;">Para construir una base de código y software sólida para proyectos en línea con una
-                                estrategia a prueba de balas. Puedes confiar en nuestra experiencia para crear un proyecto en línea hermoso y eficiente</span>
+                            <span class="lang-en">Spec-driven development: we specify before we build, so you know exactly what you are paying for — scope, milestones and budget — before a single line of code is written</span>
+                            <span class="lang-es" style="display: none;">Desarrollo guiado por especificación: especificamos antes de construir, para que sepas exactamente qué estás pagando — alcance, hitos y presupuesto — antes de escribir una sola línea de código</span>
                         </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">Delivering powerful technology for popular projects</span>
-                                    <span class="lang-es" style="display: none;">Entregando tecnología potente para proyectos populares</span>
+                                    <span class="lang-en">Discovery and technical specification of your project</span>
+                                    <span class="lang-es" style="display: none;">Discovery y especificación técnica de tu proyecto</span>
                                 </div>
                             </li>
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">Creating beautiful code.</span>
-                                    <span class="lang-es" style="display: none;">Creando código hermoso.</span>
+                                    <span class="lang-en">Modular plan with milestone-based budget</span>
+                                    <span class="lang-es" style="display: none;">Plan modular con presupuesto por hitos</span>
                                 </div>
                             </li>
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">Preparing complete new generation technology software for industry 4.0</span>
-                                    <span class="lang-es" style="display: none;">Preparando software de tecnología de nueva generación completo para la industria 4.0</span>
+                                    <span class="lang-en">Iterative delivery with evidence: tests, demos and progress logs</span>
+                                    <span class="lang-es" style="display: none;">Entrega iterativa con evidencia: pruebas, demos y bitácoras de avance</span>
                                 </div>
                             </li>
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">Speedy delivery of community services</span>
-                                    <span class="lang-es" style="display: none;">Entrega rápida de servicios comunitarios</span>
+                                    <span class="lang-en">Documentation and handover — your code, your infrastructure</span>
+                                    <span class="lang-es" style="display: none;">Documentación y entrega — tu código, tu infraestructura</span>
                                 </div>
                             </li>
                         </ul>
@@ -292,7 +350,7 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-1.png" alt="alternative">
+                        <img class="img-fluid" src="images/details-1.png" alt="Illustration of the Zenlab spec-driven process">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -301,152 +359,80 @@
     <!-- end of details 1 -->
 
 
-    <!-- Details 2 -->
+    <!-- Details 2: IA -->
     <div class="basic-2">
         <div class="container-fluid">
             <div class="row">
                 <div class="image-area">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-2.jpg" alt="alternative">
+                        <img class="img-fluid" src="images/details-2.jpg" alt="Team working on AI systems">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of image-area -->
                 <div class="text-area">
                     <div class="text-container">
                         <h2>
-                            <span class="lang-en">Design & development</span>
-                            <span class="lang-es" style="display: none;">Diseño y desarrollo</span>
+                            <span class="lang-en">AI that reaches production</span>
+                            <span class="lang-es" style="display: none;">IA que llega a producción</span>
                         </h2>
                         <hr class="hr-heading">
                         <p>
-                            <span class="lang-en">Our team of international designers and developers are able to create beautiful designs and
-                                structured code that will serve your project to establish your market position and
-                                increase revenues</span>
-                            <span class="lang-es" style="display: none;">Nuestro equipo de diseñadores y desarrolladores internacionales es capaz de crear hermosos diseños y
-                                código estructurado que servirá a su proyecto para establecer su posición en el mercado y
-                                aumentar los ingresos</span>
+                            <span class="lang-en">We have built retrieval-augmented generation platforms at state scale and AI agents for clinical documentation. Not demos: systems with real users, real security requirements and real infrastructure behind them</span>
+                            <span class="lang-es" style="display: none;">Hemos construido plataformas RAG a escala estatal y agentes de IA para documentación clínica. No demos: sistemas con usuarios reales, requisitos reales de seguridad e infraestructura real detrás</span>
                         </p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">
-                            <span class="lang-en">Lightbox</span>
-                            <span class="lang-es" style="display: none;">Caja de luz</span>
+                        <a class="btn-solid-reg page-scroll" href="#contact">
+                            <span class="lang-en">Get a quote</span>
+                            <span class="lang-es" style="display: none;">Cotiza tu proyecto</span>
                         </a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of text-area -->
             </div> <!-- end of row -->
         </div> <!-- end of container-fluid -->
-    </div> <!-- end of basic-1 -->
+    </div> <!-- end of basic-2 -->
     <!-- end of details 2 -->
 
 
-    <!-- Details Lightbox -->
-    <!-- Lightbox -->
-    <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <div class="image-container">
-                    <img class="img-fluid" src="images/details-lightbox.jpg" alt="alternative">
-                </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-                <h3>
-                    <span class="lang-en">Goals Setting</span>
-                    <span class="lang-es" style="display: none;">Establecimiento de metas</span>
-                </h3>
-                <hr>
-                <p>
-                    <span class="lang-en">The community can easily help you grow up your personal development evolution joining to the zen lab community.</span>
-                    <span class="lang-es" style="display: none;">La comunidad puede ayudarte fácilmente a hacer crecer tu evolución de desarrollo personal uniéndote a la comunidad de Zen Lab.</span>
-                </p>
-                <h4>
-                    <span class="lang-en">User Feedback</span>
-                    <span class="lang-es" style="display: none;">Comentarios de los usuarios</span>
-                </h4>
-                <p>
-                    <span class="lang-en">This is a great oportunity to make your live easier. And it will help improve
-                        your personal development.</span>
-                    <span class="lang-es" style="display: none;">Esta es una gran oportunidad para facilitarte la vida. Y ayudará a mejorar
-                        tu desarrollo personal.</span>
-                </p>
-                <ul class="list-unstyled li-space-lg">
-                    <li class="media">
-                        <i class="fas fa-check"></i>
-                        <div class="media-body">
-                            <span class="lang-en">Develop powerfull tools</span>
-                            <span class="lang-es" style="display: none;">Desarrollar herramientas poderosas</span>
-                        </div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-check"></i>
-                        <div class="media-body">
-                            <span class="lang-en">Get access to community support for your projects</span>
-                            <span class="lang-es" style="display: none;">Obtener acceso a soporte comunitario para tus proyectos</span>
-                        </div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-check"></i>
-                        <div class="media-body">
-                            <span class="lang-en">Get access for all resources from the community</span>
-                            <span class="lang-es" style="display: none;">Obtener acceso a todos los recursos de la comunidad</span>
-                        </div>
-                    </li>
-                </ul>
-                <a class="btn-solid-reg mfp-close page-scroll" href="#contact">
-                    <span class="lang-en">Contact Us</span>
-                    <span class="lang-es" style="display: none;">Contáctanos</span>
-                </a>
-                <button class="btn-outline-reg mfp-close as-button" type="button">
-                    <span class="lang-en">Back</span>
-                    <span class="lang-es" style="display: none;">Volver</span>
-                </button>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-    <!-- end of details lightbox -->
-
-
-    <!-- Details 3 -->
+    <!-- Details 3: Cloud -->
     <div class="basic-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
                         <h2>
-                            <span class="lang-en">Industry 4.0</span>
-                            <span class="lang-es" style="display: none;">Industria 4.0</span>
+                            <span class="lang-en">Infrastructure as code</span>
+                            <span class="lang-es" style="display: none;">Infraestructura como código</span>
                         </h2>
                         <hr class="hr-heading">
                         <p>
-                            <span class="lang-en">Creating software base for A/R, blockchain & Artificial Inteligence projects.</span>
-                            <span class="lang-es" style="display: none;">Creando una base de software para proyectos de R/A, blockchain e Inteligencia Artificial.</span>
+                            <span class="lang-en">Reproducible, auditable and secure environments — from the first deploy to production scale.</span>
+                            <span class="lang-es" style="display: none;">Ambientes reproducibles, auditables y seguros — desde el primer despliegue hasta la escala de producción.</span>
                         </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">Creating developer's community</span>
-                                    <span class="lang-es" style="display: none;">Creando comunidad de desarrolladores</span>
+                                    <span class="lang-en">Terraform and infrastructure as code from day one</span>
+                                    <span class="lang-es" style="display: none;">Terraform e infraestructura como código desde el día uno</span>
                                 </div>
                             </li>
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">GitHub public repositories</span>
-                                    <span class="lang-es" style="display: none;">Repositorios públicos de GitHub</span>
+                                    <span class="lang-en">Multi-cloud experience: AWS, GCP and Azure</span>
+                                    <span class="lang-es" style="display: none;">Experiencia multi-cloud: AWS, GCP y Azure</span>
                                 </div>
                             </li>
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">Web site deploying</span>
-                                    <span class="lang-es" style="display: none;">Despliegue de sitios web</span>
+                                    <span class="lang-en">CI/CD pipelines and automated testing</span>
+                                    <span class="lang-es" style="display: none;">Pipelines de CI/CD y pruebas automatizadas</span>
                                 </div>
                             </li>
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">First Github repository</span>
-                                    <span class="lang-es" style="display: none;">Primer repositorio de Github</span>
+                                    <span class="lang-en">Observability, security and cost control</span>
+                                    <span class="lang-es" style="display: none;">Observabilidad, seguridad y control de costos</span>
                                 </div>
                             </li>
                         </ul>
@@ -454,7 +440,7 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/businessman-pointing-futuristic-digital-screen.jpeg" alt="alternative">
+                        <img class="img-fluid" src="images/businessman-pointing-futuristic-digital-screen.jpeg" alt="Cloud infrastructure dashboard">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -470,41 +456,39 @@
                 <div class="col-lg-12">
                     <div class="text-container bg-gray">
                         <h2>
-                            <span class="lang-en">About our team</span>
-                            <span class="lang-es" style="display: none;">Acerca de nuestro equipo</span>
+                            <span class="lang-en">About Zenlab Digital</span>
+                            <span class="lang-es" style="display: none;">Sobre Zenlab Digital</span>
                         </h2>
                         <p>
-                            <span class="lang-en">We are a group of designers, developers and marketers specialized in the new technologies.
-                                We've launched many projects in years</span>
-                            <span class="lang-es" style="display: none;">Somos un grupo de diseñadores, desarrolladores y especialistas en marketing especializados en las nuevas tecnologías.
-                                Hemos lanzado muchos proyectos en años</span>
+                            <span class="lang-en">We are a software engineering studio based in Bogotá, Colombia, working with clients in LATAM and beyond. We specialize in taking AI from idea to production, with the engineering discipline of teams that ship for government and healthcare</span>
+                            <span class="lang-es" style="display: none;">Somos un estudio de ingeniería de software con base en Bogotá, Colombia, y clientes en LATAM y más allá. Nos especializamos en llevar la IA de la idea a producción, con la disciplina de ingeniería de equipos que entregan para gobierno y salud</span>
                         </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">We love what we do and have a lot of passion</span>
-                                    <span class="lang-es" style="display: none;">Amamos lo que hacemos y tenemos mucha pasión</span>
+                                    <span class="lang-en">Experience with state institutions and healthcare projects</span>
+                                    <span class="lang-es" style="display: none;">Experiencia con instituciones estatales y proyectos de salud</span>
                                 </div>
                             </li>
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">We are creating community</span>
-                                    <span class="lang-es" style="display: none;">Estamos creando comunidad</span>
+                                    <span class="lang-en">Spec-first: transparent scope, milestones and budget</span>
+                                    <span class="lang-es" style="display: none;">Spec primero: alcance, hitos y presupuesto transparentes</span>
                                 </div>
                             </li>
                             <li class="media">
-                                <i class="fas fa-square"></i>
+                                <i class="fas fa-square" aria-hidden="true"></i>
                                 <div class="media-body">
-                                    <span class="lang-en">We are empowering the people</span>
-                                    <span class="lang-es" style="display: none;">Estamos empoderando a la gente</span>
+                                    <span class="lang-en">Bilingual team (EN/ES) and open-source contributions on GitHub</span>
+                                    <span class="lang-es" style="display: none;">Equipo bilingüe (EN/ES) y contribuciones open source en GitHub</span>
                                 </div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
                     <div class="image-container">
-                        <img class="img-fluid" src="images/about.jpg" alt="alternative">
+                        <img class="img-fluid" src="images/about.jpg" alt="Zenlab Digital team at work">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -519,12 +503,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h4>
-                        <span class="lang-en">We invite you to join us and experiment a new way to improve your personal projects and grow up</span>
-                        <span class="lang-es" style="display: none;">Te invitamos a unirte a nosotros y experimentar una nueva forma de mejorar tus proyectos personales y crecer</span>
+                        <span class="lang-en">Have a project in mind? Tell us about it and get a technical proposal with milestones and budget — no strings attached</span>
+                        <span class="lang-es" style="display: none;">¿Tienes un proyecto en mente? Cuéntanos y recibe una propuesta técnica con hitos y presupuesto — sin compromiso</span>
                     </h4>
                     <a class="btn-solid-lg page-scroll" href="#contact">
-                        <span class="lang-en">Join Us</span>
-                        <span class="lang-es" style="display: none;">Únete a nosotros</span>
+                        <span class="lang-en">Get a quote</span>
+                        <span class="lang-es" style="display: none;">Cotiza tu proyecto</span>
                     </a>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -539,22 +523,59 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>
-                        <span class="lang-en">Join us</span>
-                        <span class="lang-es" style="display: none;">Únete a nosotros</span>
+                        <span class="lang-en">Contact us</span>
+                        <span class="lang-es" style="display: none;">Contáctanos</span>
                     </h2>
                     <p class="p-heading">
-                        <span class="lang-en">Write us and join to a new community of ¡new age entrepreneurs!</span>
-                        <span class="lang-es" style="display: none;">¡Escríbenos y únete a una nueva comunidad de emprendedores de la nueva era!</span>
+                        <span class="lang-en">Tell us about your project and we will get back to you within one business day</span>
+                        <span class="lang-es" style="display: none;">Cuéntanos sobre tu proyecto y te respondemos en un día hábil</span>
                     </p>
                     <ul class="list-unstyled li-space-lg">
-                        <li><i class="fas fa-map-marker-alt"></i> &nbsp; Bogotá, DC 110111, CO</li>
-                        <li><i class="fas fa-envelope"></i> &nbsp;<a
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> &nbsp; Bogotá, DC 110111, CO</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> &nbsp;<a
                                 href="mailto:info@zenlab.digital">info@zenlab.digital</a></li>
                     </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
+
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="cf-name">
+                                <span class="lang-en">Name</span>
+                                <span class="lang-es" style="display: none;">Nombre</span>
+                            </label>
+                            <input type="text" class="form-control" id="cf-name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-email">
+                                <span class="lang-en">Email</span>
+                                <span class="lang-es" style="display: none;">Correo</span>
+                            </label>
+                            <input type="email" class="form-control" id="cf-email" name="email" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-company">
+                                <span class="lang-en">Company (optional)</span>
+                                <span class="lang-es" style="display: none;">Empresa (opcional)</span>
+                            </label>
+                            <input type="text" class="form-control" id="cf-company" name="company" autocomplete="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-message">
+                                <span class="lang-en">Tell us about your project</span>
+                                <span class="lang-es" style="display: none;">Cuéntanos sobre tu proyecto</span>
+                            </label>
+                            <textarea class="form-control" id="cf-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group" style="text-align: center;">
+                            <button type="submit" class="btn-solid-reg as-button">
+                                <span class="lang-en">Send message</span>
+                                <span class="lang-es" style="display: none;">Enviar mensaje</span>
+                            </button>
+                            <p class="p-small" style="margin-top: 0.75rem;">
+                                <span class="lang-en">This opens your email client with the message ready to send.</span>
+                                <span class="lang-es" style="display: none;">Esto abre tu cliente de correo con el mensaje listo para enviar.</span>
+                            </p>
+                        </div>
+                    </form>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -569,12 +590,12 @@
                 <div class="col-lg-12">
                     <div class="footer-col first">
                         <h6>
-                            <span class="lang-en">About Zen Lab Digital</span>
-                            <span class="lang-es" style="display: none;">Acerca de Zen Lab Digital</span>
+                            <span class="lang-en">About Zenlab Digital</span>
+                            <span class="lang-es" style="display: none;">Sobre Zenlab Digital</span>
                         </h6>
                         <p class="p-small">
-                            <span class="lang-en">Zen Lab is a group of developers who loves to code an create innovative Tools</span>
-                            <span class="lang-es" style="display: none;">Zen Lab es un grupo de desarrolladores a quienes les encanta codificar y crear herramientas innovadoras</span>
+                            <span class="lang-en">Software engineering studio: AI agents &amp; RAG, custom development, cloud infrastructure and technical consulting</span>
+                            <span class="lang-es" style="display: none;">Estudio de ingeniería de software: agentes de IA y RAG, desarrollo a medida, infraestructura cloud y consultoría técnica</span>
                         </p>
                     </div> <!-- end of footer-col -->
                     <div class="footer-col second">
@@ -583,16 +604,15 @@
                             <span class="lang-es" style="display: none;">Enlaces</span>
                         </h6>
                         <ul class="list-unstyled li-space-lg p-small">
-                            <li>Menu: <a class="page-scroll" href="#header">
-                                <span class="lang-en">Home</span>
-                                <span class="lang-es" style="display: none;">Inicio</span>
-                            </a>, <a class="page-scroll"
-                                    href="#details">
-                                    <span class="lang-en">Motivations</span>
-                                    <span class="lang-es" style="display: none;">Motivaciones</span>
+                            <li><a class="page-scroll" href="#services">
+                                    <span class="lang-en">Services</span>
+                                    <span class="lang-es" style="display: none;">Servicios</span>
+                                </a>, <a class="page-scroll" href="#process">
+                                    <span class="lang-en">Process</span>
+                                    <span class="lang-es" style="display: none;">Proceso</span>
                                 </a>, <a class="page-scroll" href="#about">
                                     <span class="lang-en">About</span>
-                                    <span class="lang-es" style="display: none;">Acerca de</span>
+                                    <span class="lang-es" style="display: none;">Nosotros</span>
                                 </a>,
                                 <a class="page-scroll" href="#contact">
                                     <span class="lang-en">Contact</span>
@@ -603,7 +623,7 @@
                     </div> <!-- end of footer-col -->
                     <div class="footer-col third">
                         <span class="fa-stack">
-                            <a href="https://github.com/zenlabdigital">
+                            <a href="https://github.com/zenlabdigital" aria-label="Zenlab Digital on GitHub">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-github fa-stack-1x"></i>
                             </a>
@@ -626,12 +646,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="www.zenlab.digital">Zen Lab</a></p>
+                    <p class="p-small">Copyright © <a href="https://zenlab.digital">Zenlab Digital</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-
-
     </div> <!-- end of copyright -->
     <!-- end of copyright -->
 
@@ -681,12 +699,43 @@
             setLanguage(newLang); // Llama a setLanguage con el nuevo idioma
         }
 
+        // Formulario de contacto sin backend (DT-03): compone un mailto con los campos
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            const lang = document.documentElement.getAttribute('lang') || 'en';
+            const name = document.getElementById('cf-name').value.trim();
+            const email = document.getElementById('cf-email').value.trim();
+            const company = document.getElementById('cf-company').value.trim();
+            const message = document.getElementById('cf-message').value.trim();
+
+            const subject = (lang === 'es')
+                ? 'Nuevo proyecto — ' + name + (company ? ' (' + company + ')' : '')
+                : 'New project — ' + name + (company ? ' (' + company + ')' : '');
+            const bodyLines = (lang === 'es')
+                ? ['Nombre: ' + name, 'Correo: ' + email, company ? 'Empresa: ' + company : '', '', message]
+                : ['Name: ' + name, 'Email: ' + email, company ? 'Company: ' + company : '', '', message];
+            const body = bodyLines.filter(l => l !== '').join('\n');
+
+            window.location.href = 'mailto:info@zenlab.digital'
+                + '?subject=' + encodeURIComponent(subject)
+                + '&body=' + encodeURIComponent(body);
+        }
+
         // Llama a la función cuando el DOM esté completamente cargado
         document.addEventListener('DOMContentLoaded', () => {
             setLanguage(); // Establece el idioma inicial al cargar la página
             const langToggleButton = document.getElementById('language-toggle-button');
             if (langToggleButton) {
                 langToggleButton.addEventListener('click', toggleLanguage); // Añade el evento click al botón
+            }
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', handleContactSubmit);
             }
         });
     </script>
