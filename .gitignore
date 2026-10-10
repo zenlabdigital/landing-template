@@ -1,0 +1,9 @@
+# Dependencias, builds, entornos e índices locales
+.DS_Store
+.codebase-memory/
+graphify-out/
+.worker-logs/
+.test-logs/
+.dispatch-logs/
+.env
+node_modules/
