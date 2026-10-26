@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zenlab Cloud Gestionado</title>
+<meta name="description" content="Servidores VPS, bases de datos y modelos de lenguaje por API sobre AWS, gestionados por Zenlab Digital. Promo 2026: 50% off.">
+<link rel="canonical" href="https://zenlabdigital.com/promo-2026/">
+<link rel="icon" href="/images/favicon.png">
+<meta property="og:title" content="Zenlab Cloud Gestionado · Promo 2026 50% off">
+<meta property="og:description" content="Servidores VPS, bases de datos y modelos de lenguaje por API, gestionados por Zenlab Digital.">
+<meta property="og:image" content="https://zenlabdigital.com/images/og-image.jpg">
+<meta property="og:url" content="https://zenlabdigital.com/promo-2026/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --magenta:#C41E7F; --magenta-light:#E1489B; --magenta-soft:#F27BBE;
+  --carbon:#16141B; --ink:#1A1820; --muted:#6B6675; --light:#F4F2F6; --white:#FFFFFF;
+  --glass:rgba(255,255,255,.06); --glass-2:rgba(255,255,255,.07); --line:rgba(255,255,255,.12);
+  --text:rgba(255,255,255,.92); --text-2:rgba(255,255,255,.70);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--carbon);color:var(--text);font-family:'IBM Plex Sans',sans-serif;font-size:18px;line-height:1.6;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;z-index:0;border-radius:50%;filter:blur(120px);pointer-events:none}
+body::before{width:620px;height:620px;top:-180px;right:-160px;background:rgba(196,30,127,.38)}
+body::after{width:520px;height:520px;bottom:-200px;left:-180px;background:rgba(225,72,155,.22)}
+.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:0 24px}
+.promo{position:sticky;top:0;z-index:100;text-align:center;padding:18px 16px;background:var(--magenta);color:#fff;font-family:'Space Grotesk',sans-serif;font-size:clamp(20px,3vw,30px);font-weight:700;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 6px 30px rgba(196,30,127,.55)}
+header{display:flex;align-items:center;justify-content:space-between;padding:28px 0}
+header img{height:64px;width:auto}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta-light)}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;font-weight:600;letter-spacing:-.01em;color:var(--white);margin:0}
+h1{font-size:clamp(40px,7vw,70px);line-height:1.05;margin:18px 0 24px}
+h2{font-size:clamp(32px,4.6vw,46px);line-height:1.1;margin:12px 0 20px}
+h3{font-size:clamp(22px,2.6vw,26px);margin:0 0 10px}
+p{margin:0 0 16px;color:var(--text-2)}
+.lead{font-size:clamp(18px,2vw,20px);max-width:760px}
+section{padding:90px 0 0;scroll-margin-top:70px}
+.hero{padding:70px 0 20px}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px}
+.btn-primary{background:var(--magenta);color:#fff;box-shadow:0 8px 30px rgba(196,30,127,.35)}
+.btn-primary:hover{background:var(--magenta-light)}
+.btn-secondary{border:1px solid var(--line);color:#fff;background:var(--glass)}
+.panel{background:var(--glass);border:1px solid var(--line);border-radius:24px;padding:32px;backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%)}
+.panel-nested{background:var(--glass-2);border:1px solid var(--line);border-radius:20px;padding:24px}
+.panel-accent{background:rgba(196,30,127,.16);border:1px solid rgba(242,123,190,.30);border-radius:32px;padding:clamp(28px,5vw,56px)}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+.grid>*{min-width:0}
+.num{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--magenta-light);margin-bottom:16px}
+ul.dots{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.dots li{position:relative;padding-left:24px;color:var(--text)}
+ul.dots li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--magenta-light);box-shadow:0 0 10px var(--magenta-light)}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:20px}
+table{width:100%;border-collapse:collapse;min-width:640px;font-size:16px}
+th{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-2);text-align:left;padding:14px 16px;border-bottom:1px solid var(--line)}
+td{padding:15px 16px;border-bottom:1px solid rgba(255,255,255,.06);color:var(--text);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.plan{font-family:'Space Grotesk',sans-serif;font-weight:600;color:#fff}
+td.price{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:#fff;text-align:right}
+th.price{text-align:right}
+td.mono{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--text-2)}
+.price small{font-family:'IBM Plex Sans',sans-serif;font-weight:400;font-size:13px;color:var(--text-2)}
+.cat td{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--magenta-light);padding-top:22px}
+.note{font-size:15px;color:var(--text-2);margin-top:16px}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2);border:1px solid var(--line);border-radius:999px;padding:4px 12px;display:inline-block;margin-bottom:14px}
+.steps{counter-reset:s}
+.big{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:36px;color:#fff;line-height:1}
+footer{padding:90px 0 50px;font-size:14px;color:var(--text-2);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+footer a{color:var(--text-2)}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  section{padding-top:70px}
+  .panel{padding:22px}
+  header img{height:48px}
+  body{font-size:17px}
+}
+@media print{body::before,body::after{display:none} .panel,.panel-accent{backdrop-filter:none}}
+</style>
+</head>
+<body>
+<div class="promo">Promo 2026 · 50% off</div>
+<div class="wrap">
+
+<header>
+  <a href="/"><img src="data:image/png;base64,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" alt="Zenlab Digital"></a>
+  <span class="eyebrow">Propuesta · Oct 2026</span>
+</header>
+
+<section class="hero">
+  <span class="eyebrow">00 · Servicios cloud gestionados</span>
+  <h1>Infraestructura gestionada, con precio cerrado</h1>
+  <p class="lead">Servidores, bases de datos y almacenamiento sobre la infraestructura de Amazon Web Services, instalados, asegurados y operados por Zenlab Digital. Usted se ocupa de su producto. Nosotros nos ocupamos de que el servidor siga en pie.</p>
+  <div class="btns">
+    <a class="btn btn-primary" href="mailto:info@zenlabdigital.com?subject=Servicios%20cloud%20gestionados">Solicitar un servidor</a>
+    <a class="btn btn-secondary" href="#vps">Ver planes</a>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">01 · Qué incluye cada servicio</span>
+  <h2>La gestión viene incluida</h2>
+  <div class="grid g2">
+    <div class="panel">
+      <div class="num">01</div>
+      <h3>Puesta en marcha</h3>
+      <ul class="dots">
+        <li>Instalación de Ubuntu LTS con hardening de seguridad</li>
+        <li>IP fija, firewall configurado y certificado SSL</li>
+        <li>Acceso solo por llave SSH, sin contraseñas</li>
+        <li>Ficha de entrega documentada</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="num">02</div>
+      <h3>Operación continua</h3>
+      <ul class="dots">
+        <li>Backups diarios con 7 días de retención</li>
+        <li>Monitoreo con alertas de disponibilidad y consumo</li>
+        <li>Parches de seguridad automáticos</li>
+        <li>Soporte en español por correo, en horario laboral</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="vps">
+  <span class="eyebrow">02 · VPS gestionado</span>
+  <h2>Servidores virtuales</h2>
+  <p class="lead">Para sitios web, APIs, aplicaciones internas y automatizaciones. Tarifa mensual fija con transferencia de datos incluida y región en Estados Unidos (Virginia).</p>
+  <div class="panel table-wrap" style="padding:8px 8px">
+    <table>
+      <thead><tr><th>Plan</th><th>vCPU</th><th>RAM</th><th>CPU</th><th>Disco SSD</th><th>Transferencia/mes</th><th class="price">USD/mes</th></tr></thead>
+      <tbody>
+        <tr><td class="plan">Zen 1</td><td>2</td><td>1 GB</td><td class="mono">x86_64</td><td>40 GB</td><td>2 TB</td><td class="price">19</td></tr>
+        <tr><td class="plan">Zen 2</td><td>2</td><td>2 GB</td><td class="mono">x86_64</td><td>60 GB</td><td>3 TB</td><td class="price">29</td></tr>
+        <tr><td class="plan">Zen 4</td><td>2</td><td>4 GB</td><td class="mono">x86_64</td><td>80 GB</td><td>4 TB</td><td class="price">49</td></tr>
+        <tr><td class="plan">Zen 8</td><td>2</td><td>8 GB</td><td class="mono">x86_64</td><td>160 GB</td><td>5 TB</td><td class="price">89</td></tr>
+        <tr><td class="plan">Zen 16</td><td>4</td><td>16 GB</td><td class="mono">x86_64</td><td>320 GB</td><td>6 TB</td><td class="price">169</td></tr>
+        <tr><td class="plan">Zen 32</td><td>8</td><td>32 GB</td><td class="mono">x86_64</td><td>640 GB</td><td>7 TB</td><td class="price">319</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">CPU de rendimiento en ráfaga: ideal para cargas variables. Para uso de CPU sostenido al 100 %, ver Cómputo dedicado.</p>
+</section>
+
+<section>
+  <span class="eyebrow">03 · Servicios gestionados</span>
+  <h2>Bases de datos, archivos y entrega de contenido</h2>
+  <div class="grid g2">
+    <div class="panel">
+      <span class="tag">PostgreSQL 18 · MySQL 8.4</span>
+      <h3>Base de datos gestionada</h3>
+      <p>Motor administrado con backups automáticos y acceso privado desde sus servidores.</p>
+      <div class="table-wrap">
+        <table style="min-width:0">
+          <thead><tr><th>Plan</th><th>RAM</th><th>Disco</th><th class="price">USD/mes</th></tr></thead>
+          <tbody>
+            <tr><td class="plan">DB 1</td><td>1 GB</td><td>40 GB</td><td class="price">29</td></tr>
+            <tr><td class="plan">DB 2</td><td>2 GB</td><td>80 GB</td><td class="price">55</td></tr>
+            <tr><td class="plan">DB 4</td><td>4 GB</td><td>120 GB</td><td class="price">105</td></tr>
+            <tr><td class="plan">DB 8</td><td>8 GB</td><td>240 GB</td><td class="price">195</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Alta disponibilidad (réplica en espera en otra zona): el doble del plan.</p>
+    </div>
+    <div class="grid" style="gap:20px">
+      <div class="panel-nested">
+        <h3>Almacenamiento de archivos</h3>
+        <p>Almacenamiento de objetos para respaldos, imágenes y documentos, con su propia credencial.</p>
+        <ul class="dots"><li>100 GB · USD 9/mes</li><li>250 GB · USD 15/mes</li></ul>
+      </div>
+      <div class="panel-nested">
+        <h3>CDN</h3>
+        <p>Distribución global de su sitio con caché y HTTPS.</p>
+        <ul class="dots"><li>50 GB/mes · USD 9</li><li>200 GB/mes · USD 25</li><li>500 GB/mes · USD 59</li></ul>
+      </div>
+      <div class="panel-nested">
+        <h3>Balanceador y contenedores</h3>
+        <ul class="dots"><li>Balanceador de carga con SSL · USD 35/mes</li><li>Servicio de contenedores · desde USD 19/mes</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">04 · Cómputo dedicado</span>
+  <h2>Máquinas a medida</h2>
+  <p class="lead">CPU al 100 % sostenido, mucha memoria o GPU para inteligencia artificial. Incluye 50 GB de disco SSD, IP fija y la misma gestión de los planes VPS.</p>
+  <div class="panel table-wrap" style="padding:8px 8px">
+    <table>
+      <thead><tr><th>Máquina</th><th>vCPU</th><th>RAM</th><th>CPU</th><th>Uso</th><th class="price">USD/mes</th></tr></thead>
+      <tbody>
+        <tr class="cat"><td colspan="6">Propósito general</td></tr>
+        <tr><td class="plan">General 8</td><td>2</td><td>8 GB</td><td class="mono">ARM64 · 2,8 GHz</td><td>Aplicaciones en producción</td><td class="price">119</td></tr>
+        <tr><td class="plan">General 16</td><td>4</td><td>16 GB</td><td class="mono">ARM64 · 2,8 GHz</td><td>Aplicaciones en producción</td><td class="price">229</td></tr>
+        <tr><td class="plan">General 16 x86</td><td>4</td><td>16 GB</td><td class="mono">x86_64 · 3,2 GHz</td><td>Software que exige x86</td><td class="price">239</td></tr>
+        <tr class="cat"><td colspan="6">Cómputo intensivo</td></tr>
+        <tr><td class="plan">CPU 4</td><td>4</td><td>8 GB</td><td class="mono">ARM64 · 2,8 GHz</td><td>Procesamiento, builds</td><td class="price">199</td></tr>
+        <tr><td class="plan">CPU 8 x86</td><td>8</td><td>16 GB</td><td class="mono">x86_64 · 3,2 GHz</td><td>Video, cálculo</td><td class="price">409</td></tr>
+        <tr class="cat"><td colspan="6">Memoria</td></tr>
+        <tr><td class="plan">RAM 32</td><td>4</td><td>32 GB</td><td class="mono">ARM64 · 2,8 GHz</td><td>Bases de datos, caché</td><td class="price">289</td></tr>
+        <tr><td class="plan">RAM 64 x86</td><td>8</td><td>64 GB</td><td class="mono">x86_64 · 3,2 GHz</td><td>ERP, analítica</td><td class="price">639</td></tr>
+        <tr class="cat"><td colspan="6">GPU</td></tr>
+        <tr><td class="plan">GPU T4</td><td>4</td><td>16 GB</td><td class="mono">x86_64 · 2,5 GHz + NVIDIA T4 16 GB</td><td>Inferencia de IA</td><td class="price">629</td></tr>
+        <tr><td class="plan">GPU L4</td><td>4</td><td>16 GB</td><td class="mono">x86_64 · 3,4 GHz + NVIDIA L4 24 GB</td><td>IA generativa, visión</td><td class="price">959</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Otras configuraciones (hasta 32 vCPU y 256 GB de RAM) bajo cotización. En ARM64 cada vCPU es un núcleo físico; en x86_64, un hilo.</p>
+</section>
+
+<section id="llm">
+  <span class="eyebrow">05 · Modelos de lenguaje por API</span>
+  <h2>Una API key, más de 20 modelos</h2>
+  <p class="lead">Acceso a modelos de Anthropic, OpenAI, Amazon, DeepSeek, Mistral, Meta y otros sobre Amazon Bedrock, con una sola credencial y una sola factura. Pago por uso, sin servidores que administrar.</p>
+  <div class="panel table-wrap" style="padding:8px 8px">
+    <table>
+      <thead><tr><th>Modelo</th><th>Proveedor</th><th>Ideal para</th><th class="price">Entrada</th><th class="price">Salida</th><th class="price">RPM</th><th class="price">TPM</th></tr></thead>
+      <tbody>
+        <tr class="cat"><td colspan="7">Frontera</td></tr>
+        <tr><td class="plan">Claude Opus 5.5</td><td>Anthropic</td><td>Agentes, código, razonamiento</td><td class="price">5,00</td><td class="price">25,00</td><td class="mono price">—</td><td class="mono price">30 M</td></tr>
+        <tr><td class="plan">Claude Sonnet 5.5</td><td>Anthropic</td><td>Uso general de alta calidad</td><td class="price">2,50</td><td class="price">12,50</td><td class="mono price">—</td><td class="mono price">6 M</td></tr>
+        <tr><td class="plan">Claude Haiku 5.5</td><td>Anthropic</td><td>Alto volumen, baja latencia</td><td class="price">0,13</td><td class="price">0,63</td><td class="mono price">—</td><td class="mono price">10 M</td></tr>
+        <tr><td class="plan">GPT-6 Astra</td><td>OpenAI</td><td>Razonamiento complejo</td><td class="price">12,50</td><td class="price">62,50</td><td class="mono price">—</td><td class="mono price">4 M</td></tr>
+        <tr><td class="plan">Grok 4.7</td><td>xAI</td><td>Uso general</td><td class="price">2,75</td><td class="price">8,25</td><td class="mono price">—</td><td class="mono price">10 M</td></tr>
+        <tr class="cat"><td colspan="7">Abiertos de alto rendimiento</td></tr>
+        <tr><td class="plan">GLM 5</td><td>Z.ai</td><td>Agentes, código</td><td class="price">1,25</td><td class="price">4,00</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">Kimi K2.5</td><td>Moonshot AI</td><td>Agentes, contexto largo</td><td class="price">0,75</td><td class="price">3,75</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">DeepSeek V3.2</td><td>DeepSeek</td><td>Uso general, código</td><td class="price">0,78</td><td class="price">2,32</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">Mistral Large 3</td><td>Mistral AI</td><td>Uso general, europeo</td><td class="price">0,63</td><td class="price">1,88</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">Qwen3 Coder Next</td><td>Qwen</td><td>Programación</td><td class="price">0,63</td><td class="price">1,50</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">MiniMax M2.5</td><td>MiniMax</td><td>Agentes, código</td><td class="price">0,38</td><td class="price">1,50</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr class="cat"><td colspan="7">Económicos de alto volumen</td></tr>
+        <tr><td class="plan">gpt-oss-120b</td><td>OpenAI</td><td>Razonamiento económico</td><td class="price">0,19</td><td class="price">0,75</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">gpt-oss-20b</td><td>OpenAI</td><td>Clasificación, extracción</td><td class="price">0,09</td><td class="price">0,38</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">Nemotron 3 Super</td><td>NVIDIA</td><td>Agentes económicos</td><td class="price">0,19</td><td class="price">0,82</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">Qwen3 32B</td><td>Qwen</td><td>Uso general</td><td class="price">0,19</td><td class="price">0,75</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">Gemma 3 27B</td><td>Google</td><td>Resúmenes, multilingüe</td><td class="price">0,29</td><td class="price">0,48</td><td class="mono price">10.000</td><td class="mono price">100 M</td></tr>
+        <tr><td class="plan">Llama 4 Maverick</td><td>Meta</td><td>Uso general, imágenes</td><td class="price">0,30</td><td class="price">1,22</td><td class="mono price">800</td><td class="mono price">0,6 M</td></tr>
+        <tr class="cat"><td colspan="7">Amazon Nova</td></tr>
+        <tr><td class="plan">Nova 2 Lite</td><td>Amazon</td><td>Multimodal económico</td><td class="price">0,38</td><td class="price">3,13</td><td class="mono price">2.000</td><td class="mono price">8 M</td></tr>
+        <tr><td class="plan">Nova Pro</td><td>Amazon</td><td>Documentos, video</td><td class="price">1,00</td><td class="price">4,00</td><td class="mono price">500</td><td class="mono price">2 M</td></tr>
+        <tr><td class="plan">Nova Micro</td><td>Amazon</td><td>Texto ultra económico</td><td class="price">0,05</td><td class="price">0,18</td><td class="mono price">4.000</td><td class="mono price">8 M</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Precios en USD por millón de tokens. RPM: solicitudes por minuto; TPM: tokens por minuto. Ambos son la capacidad total de la plataforma por modelo, compartida entre clientes y no garantizada por API key; «—» indica que el modelo solo se limita por tokens. Los modelos y precios pueden cambiar según el proveedor; los cambios se avisan con 30 días.</p>
+</section>
+
+<section>
+  <span class="eyebrow">06 · Acceso seguro</span>
+  <h2>Cómo recibe sus credenciales</h2>
+  <p class="lead">Ninguna contraseña viaja por correo ni por chat. El acceso se entrega con un procedimiento verificable.</p>
+  <div class="grid g3">
+    <div class="panel-nested"><div class="num">01</div><h3>Su llave</h3><p>Usted genera una llave SSH en su equipo y nos envía solo la parte pública. La llave privada nunca sale de su computador.</p></div>
+    <div class="panel-nested"><div class="num">02</div><h3>Servidor listo</h3><p>Creamos su usuario, cerramos el acceso por contraseña y limitamos los puertos abiertos a lo necesario.</p></div>
+    <div class="panel-nested"><div class="num">03</div><h3>Entrega cifrada</h3><p>Las claves de base de datos y almacenamiento se entregan en un enlace cifrado que expira en 24 horas y se abre una sola vez.</p></div>
+    <div class="panel-nested"><div class="num">04</div><h3>Verificación</h3><p>Le damos la huella digital del servidor para que confirme que se conecta al equipo correcto.</p></div>
+    <div class="panel-nested"><div class="num">05</div><h3>Rotación</h3><p>Las claves se cambian cada 90 días o cuando una persona sale de su equipo. El acceso se retira el mismo día.</p></div>
+    <div class="panel-nested"><div class="num">06</div><h3>Su información</h3><p>Usuarios individuales por persona, sin cuentas compartidas. Al finalizar el servicio entregamos un respaldo final y borramos los datos.</p></div>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">07 · Servicios profesionales</span>
+  <h2>Además del servidor</h2>
+  <div class="grid g3">
+    <div class="panel"><h3>Migración</h3><p>Traslado de su sitio, aplicación o base de datos desde su proveedor actual, sin pérdida de datos.</p></div>
+    <div class="panel"><h3>Despliegue continuo</h3><p>Publicación automática desde su repositorio con contenedores y certificados gestionados.</p></div>
+    <div class="panel"><h3>Aplicaciones gestionadas</h3><p>WordPress, n8n y otras herramientas instaladas y actualizadas por nosotros.</p></div>
+    <div class="panel"><h3>IA privada</h3><p>Modelos de lenguaje propios sobre GPU o integraciones con APIs de IA, sin que sus datos salgan de su infraestructura.</p></div>
+    <div class="panel"><h3>Correo y dominios</h3><p>DNS, dominios y correo transaccional para sus aplicaciones.</p></div>
+    <div class="panel"><h3>Arquitectura cloud</h3><p>Diseño de infraestructura escalable cuando su producto supera un solo servidor.</p></div>
+  </div>
+  <p class="note">Servicios profesionales bajo cotización.</p>
+</section>
+
+<section>
+  <span class="eyebrow">08 · Condiciones</span>
+  <h2>Términos comerciales</h2>
+  <div class="panel">
+    <ul class="dots">
+      <li>Precios en dólares estadounidenses (USD), mensuales y prepagados, antes de impuestos.</li>
+      <li>Transferencia de datos por encima del cupo del plan: se factura por consumo.</li>
+      <li>Modelos de lenguaje: saldo prepagado por API key que se descuenta por tokens consumidos; el acceso se pausa al agotarse el saldo.</li>
+      <li>Cambio de plan en cualquier momento; el cobro se prorratea.</li>
+      <li>Soporte en horario laboral de Colombia. Atención urgente fuera de horario con recargo.</li>
+      <li>El uso del servicio está sujeto a la política de uso aceptable de Zenlab Digital.</li>
+      <li>Propuesta en borrador: valores sujetos a confirmación.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="panel-accent">
+    <span class="eyebrow">Siguiente paso</span>
+    <h2>Cuéntenos qué necesita correr</h2>
+    <p class="lead">Le recomendamos el plan adecuado y tenemos su servidor en línea en un día hábil.</p>
+    <div class="btns"><a class="btn btn-primary" href="mailto:info@zenlabdigital.com?subject=Servicios%20cloud%20gestionados">info@zenlabdigital.com</a></div>
+  </div>
+</section>
+
+<footer>
+  <span>Zenlab Digital · <a href="https://zenlabdigital.com">zenlabdigital.com</a></span>
+  <span>Infraestructura sobre Amazon Web Services · Región us-east-1</span>
+</footer>
+
+</div>
+</body>
+</html>
